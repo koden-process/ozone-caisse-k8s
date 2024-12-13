@@ -4,7 +4,7 @@ AppName: amandine-php74-db
 MariadbReplicas: 1
 MariadbImageTag: latest
 MariadbDiskSize: 50Gi
-MariadbServerId: 3
+MariadbServerId: 4
 MariadbDbName: mydatabase
 MariadbDbUser: username
 MariadbDbPort: 3306
