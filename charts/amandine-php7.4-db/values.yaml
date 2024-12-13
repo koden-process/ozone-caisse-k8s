@@ -1,0 +1,10 @@
+NameSpace: koden-clients
+AppName: ozone-caisse-db
+
+MariadbReplicas: 1
+MariadbImageTag: latest
+MariadbDiskSize: 50Gi
+MariadbServerId: 4
+MariadbDbName: ozoneshop_prod
+MariadbDbUser: ozoneshop_prod
+MariadbDbPort: 3306
