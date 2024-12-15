@@ -1,7 +1,7 @@
 NameSpace: koden-clients
 AppName: ozone-caisse-app
 
-HostName: caisse-new.ozoneshop.fr
+HostName: caisse.ozoneshop.fr
 DiskSize: 40Gi
 
 DockerImage: killiankopp/amandine-7.4:241122
