@@ -18,7 +18,5 @@ spec:
       containers:
       - name: apache-exporter
         image: lusotycoon/apache-exporter:v1.0.9
-        args:
-        - --scrape-uri=http://{{ .Values.AppName }}-service.{{ .Values.NameSpace }}.svc.cluster.local/server-status?auto
         ports:
         - containerPort: 9117
