@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: apache-exporter
-        image: prom/apache-exporter:latest
+        image: bitnami/apache-exporter:latest
         args:
         - --scrape-uri=http://{{ .Values.AppName }}-service.{{ .Values.NameSpace }}.svc.cluster.local/server-status?auto
         ports:
