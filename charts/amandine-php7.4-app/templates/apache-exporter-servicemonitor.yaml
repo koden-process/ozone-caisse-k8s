@@ -2,11 +2,14 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: {{ .Values.AppName }}-exporter-monitor
-  namespace: {{ .Values.NameSpace }}
+  namespace: monitoring
 spec:
   selector:
     matchLabels:
       app: {{ .Values.AppName }}-exporter
+  namespaceSelector:
+    matchNames:
+      - koden-clients
   endpoints:
   - port: metrics
     interval: 15s
