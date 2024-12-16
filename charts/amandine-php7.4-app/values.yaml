@@ -4,4 +4,4 @@ AppName: ozone-caisse-app
 HostName: caisse.ozoneshop.fr
 DiskSize: 40Gi
 
-DockerImage: killiankopp/amandine-7.4:241216
+DockerImage: killiankopp/amandine-7.4:241216-1
