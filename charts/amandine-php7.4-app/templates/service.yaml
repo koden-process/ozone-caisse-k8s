@@ -3,13 +3,12 @@ kind: Service
 metadata:
   name: {{ .Values.AppName }}-service
   namespace: {{ .Values.NameSpace }}
+  labels:
+    app: {{ .Values.AppName }}-exporter
+    app.kubernetes.io/instance: {{ .Values.AppName }}
 spec:
   ports:
   - port: 80
     targetPort: 80
   selector:
     app: {{ .Values.AppName }}
-service:
-  labels:
-    app: {{ .Values.AppName }}-exporter
-    app.kubernetes.io/instance: {{ .Values.AppName }}
