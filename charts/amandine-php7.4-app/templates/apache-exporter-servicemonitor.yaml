@@ -11,5 +11,6 @@ spec:
     matchNames:
       - koden-clients
   endpoints:
-  - port: metrics
+  - port: 9117
+    path: /metrics
     interval: 15s
