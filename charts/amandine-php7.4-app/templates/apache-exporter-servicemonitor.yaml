@@ -3,10 +3,12 @@ kind: ServiceMonitor
 metadata:
   name: {{ .Values.AppName }}-exporter-monitor
   namespace: monitoring
+  labels:
+    release: prometheus
 spec:
   selector:
     matchLabels:
-      app: {{ .Values.AppName }}-exporter
+      app.kubernetes.io/instance: {{ .Values.AppName }}
   namespaceSelector:
     matchNames:
       - koden-clients
