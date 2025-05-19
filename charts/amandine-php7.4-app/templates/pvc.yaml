@@ -1,15 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: ozone-caisse-app-pvc
-  namespace: koden-clients
-  labels:
-    app.kubernetes.io/instance: ozone-caisse-app
+  name: {{ .Values.AppName }}-pvc
+  namespace: {{ .Values.NameSpace }}
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: ""  
-  volumeName: ovh-managed-kubernetes-i3c94d-pvc-38b3c521-10df-4764-86a3-cf59cb9185c4
   resources:
     requests:
-      storage: 45Gi
+      storage: {{ .Values.DiskSize }}
