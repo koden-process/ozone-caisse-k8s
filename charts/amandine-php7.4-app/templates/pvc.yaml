@@ -9,3 +9,4 @@ spec:
   resources:
     requests:
       storage: {{ .Values.DiskSize }}
+  volumeName: ovh-managed-kubernetes-i3c94d-pvc-38b3c521-10df-4764-86a3-cf59cb9185c4
